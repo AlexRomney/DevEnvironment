@@ -13,7 +13,7 @@ INSTALLATIONS
     follow instructions. (This is REQUIRED before the Homebrew install)
 * Install Homebrew
    * open iTerm and paste the line below in:
-     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"     
+   * ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"     
    * brew install node, git, postgresql, redis
 * Install Postgres
     * Go to: http://postgresapp.com
