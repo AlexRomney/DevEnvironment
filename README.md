@@ -70,3 +70,8 @@ INSTALLATIONS
   * valet install
   * composer global require "laravel/installer"
   * valet park in Desktop path
+* New Projects
+  * Copy .env.example and paste in new .env file
+  * Run php artisan key:generate
+  * Run composer install
+  * Run nmp install 
