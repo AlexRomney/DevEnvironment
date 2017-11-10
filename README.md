@@ -15,7 +15,7 @@ INSTALLATIONS
 * Install Homebrew
    * open iTerm and paste the line below in:
    * ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"     
-   * brew install node, git, postgresql, redis
+   * brew install node, git, postgresql, redis, mysql
 * Install Postgres
     * Go to: http://postgresapp.com
     * Download the zip
@@ -72,6 +72,8 @@ INSTALLATIONS
   * valet park in Desktop path
 * New Projects
   * Copy .env.example and paste in new .env file
+  * Connect to database
   * Run php artisan key:generate
   * Run composer install
-  * Run nmp install 
+  * Run nmp install
+  * Run npm run dev
