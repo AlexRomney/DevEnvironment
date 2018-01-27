@@ -78,4 +78,3 @@ INSTALLATIONS
   * Run nmp install
   * Run npm run dev
   * Run php artisan migrate
-  * Run php artisan db:seed
