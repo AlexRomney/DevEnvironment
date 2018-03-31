@@ -6,8 +6,8 @@ INSTALLATIONS
 
 * [Iterm2](https://www.iterm2.com/)
 * Slack: App Store
-* Atom
-* Sequel Pro (pancakes)
+* [Atom](https://atom.io/)
+* [Sequel Pro (pancakes)](https://www.sequelpro.com/)
 * Xcode: App Store
 * Install X-Code Command Line Tools:
     * type: xcode-select --install
@@ -16,6 +16,7 @@ INSTALLATIONS
    * open iTerm and paste the line below in:
    * ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"     
    * brew install node, git, postgresql, redis, mysql
+   * run brew services start <programs>
 * Install Postgres
     * Go to: http://postgresapp.com
     * Download the zip
@@ -54,24 +55,25 @@ INSTALLATIONS
 ## PHP/Laravel
 ==============
 
-* Install Composer
+* [Install Composer](https://getcomposer.org/download/)
   * php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-    php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-    php composer-setup.php
-    php -r "unlink('composer-setup.php');"
+  * php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  * php composer-setup.php
+  * php -r "unlink('composer-setup.php');"
   * mv composer.phar /usr/local/bin/composer
-* Install Valet
+* [Install Valet](https://laravel.com/docs/5.6/valet)
   * brew update
-  * brew install homebrew/php/php71
+  * brew install homebrew/core/php
   * composer global require laravel/valet
-  * In .bashrc:
+  * In .bash_profile:
   * export PATH="~/.composer/vendor/bin:$PATH"
   * export PATH=$PATH:~/.composer/vendor/bin
   * valet install
   * composer global require "laravel/installer"
   * valet park in Desktop path
+  * valet domain <name you want>
 * New Projects
-  * Copy .env.example and paste in new .env file
+  * Create .env file
   * Connect to database
   * Run php artisan key:generate
   * Run composer install
